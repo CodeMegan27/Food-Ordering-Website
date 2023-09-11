@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Classic Vanilla",
+        "price": "₹374.25",
+        "description": "Smooth and creamy vanilla ice cream, perfect for those who love the timeless classic."
+    },
+    {
+        "name": "Chocolate Fudge Brownie",
+        "price": "₹411.75",
+        "description": "Rich chocolate ice cream loaded with chunks of fudge brownie for a decadent treat."
+    },
+    {
+        "name": "Strawberry Swirl",
+        "price": "₹359.25",
+        "description": "Delicious strawberry ice cream swirled with ribbons of sweet strawberry sauce."
+    },
+    {
+        "name": "Mint Chocolate Chip",
+        "price": "₹396.75",
+        "description": "Refreshing mint ice cream with generous amounts of chocolate chips for a delightful crunch."
+    },
+    {
+        "name": "Cookies and Cream",
+        "price": "₹374.25",
+        "description": "Creamy vanilla ice cream loaded with chunks of chocolate sandwich cookies."
+    },
+    {
+        "name": "Rocky Road",
+        "price": "₹449.25",
+        "description": "Decadent chocolate ice cream packed with marshmallows and roasted almonds."
+    },
+    {
+        "name": "Peanut Butter Cup",
+        "price": "₹411.75",
+        "description": "Creamy peanut butter ice cream with swirls of peanut butter and chocolate cups."
+    },
+    {
+        "name": "Caramel Crunch",
+        "price": "₹396.75",
+        "description": "Toffee-flavored ice cream with caramel swirls and bits of crunchy toffee."
+    },
+    {
+        "name": "Tropical Paradise",
+        "price": "₹486.75",
+        "description": "A blend of exotic fruits in a creamy coconut ice cream for a taste of the tropics."
+    },
+    {
+        "name": "Double Espresso",
+        "price": "₹434.25",
+        "description": "Intense coffee-flavored ice cream made with a double shot of espresso for coffee lovers."
+    }
+]

@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    height: 15vh;
+    background-color: lightgray;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.header ul a {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu_container {
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    z-index: 1;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.menu_container:hover .menu {
+    display: block;
+}
+
+.cart_count {
+    background-color: red;
+    padding: 5px 4px;
+    border-radius: 50%;
+    color: white;
+    margin-top: -20px ;
+}
