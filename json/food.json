@@ -1,124 +1,449 @@
-{
-    "menu": [
-        {
-            "item_type": "pizza",
-            "name": "Margherita Pizza",
-            "price": "₹299.99",
-            "description": "A classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Pepperoni Pizza",
-            "price": "₹349.99",
-            "description": "A pizza loaded with spicy pepperoni slices, tomato sauce, and melted cheese."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Vegetarian Supreme Pizza",
-            "price": "₹329.99",
-            "description": "A veggie delight with bell peppers, onions, mushrooms, olives, and cheese on a crispy crust."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Hawaiian Pizza",
-            "price": "₹359.99",
-            "description": "A tropical twist with ham, pineapple chunks, tomato sauce, and cheese."
-        },
-        {
-            "item_type": "pizza",
-            "name": "BBQ Chicken Pizza",
-            "price": "₹369.99",
-            "description": "A smoky delight with barbecue chicken, onions, bell peppers, and mozzarella cheese."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Supreme Meat Lover's Pizza",
-            "price": "₹399.99",
-            "description": "A carnivore's dream with pepperoni, sausage, bacon, ham, and extra cheese on a thick crust."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Four Cheese Pizza",
-            "price": "₹329.99",
-            "description": "A cheese lover's delight with a blend of mozzarella, cheddar, provolone, and Parmesan."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Vegan Delight Pizza",
-            "price": "₹349.99",
-            "description": "A vegan-friendly pizza with plant-based cheese, assorted veggies, and marinara sauce."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Barbecue Veggie Pizza",
-            "price": "₹359.99",
-            "description": "A smoky veggie treat with barbecue sauce, bell peppers, onions, and corn."
-        },
-        {
-            "item_type": "pizza",
-            "name": "Pesto Chicken Pizza",
-            "price": "₹379.99",
-            "description": "A gourmet pizza with pesto sauce, grilled chicken, sun-dried tomatoes, and feta cheese."
-        },
-        {
-            "item_type": "burger",
-            "name": "Double Bacon Cheeseburger",
-            "price": "₹189.99",
-            "description": "A hearty burger with double bacon strips, Angus beef patties, cheese, lettuce, and special sauce."
-        },
-        {
-            "item_type": "burger",
-            "name": "Black Bean Burger",
-            "price": "₹139.99",
-            "description": "A vegetarian option with a black bean patty, avocado, salsa, and chipotle mayo."
-        },
-        {
-            "item_type": "burger",
-            "name": "Crispy Fish Burger",
-            "price": "₹159.99",
-            "description": "A seafood delight with crispy fish fillet, lettuce, tartar sauce, and a sesame seed bun."
-        },
-        {
-            "item_type": "burger",
-            "name": "BBQ Pulled Pork Burger",
-            "price": "₹169.99",
-            "description": "A barbecue lover's choice with slow-cooked pulled pork, coleslaw, and barbecue sauce."
-        },
-        {
-            "item_type": "burger",
-            "name": "Mushroom Veggie Burger",
-            "price": "₹149.99",
-            "description": "A veggie delight with sautéed mushrooms, Swiss cheese, lettuce, and truffle aioli."
-        },
-        {
-            "item_type": "burger",
-            "name": "Classic Cheeseburger",
-            "price": "₹149.99",
-            "description": "A juicy beef patty topped with cheddar cheese, lettuce, tomato, and mayo in a soft bun."
-        },
-        {
-            "item_type": "burger",
-            "name": "Veggie Burger",
-            "price": "₹139.99",
-            "description": "A meatless delight with a plant-based patty, lettuce, tomato, and special vegan sauce."
-        },
-        {
-            "item_type": "burger",
-            "name": "Bacon Deluxe Burger",
-            "price": "₹169.99",
-            "description": "A decadent burger with crispy bacon, Angus beef patty, lettuce, and tangy barbecue sauce."
-        },
-        {
-            "item_type": "burger",
-            "name": "Mushroom Swiss Burger",
-            "price": "₹159.99",
-            "description": "A gourmet treat with sautéed mushrooms, Swiss cheese, Angus beef patty, and creamy aioli."
-        },
-        {
-            "item_type": "burger",
-            "name": "Spicy Chick'n Burger",
-            "price": "₹149.99",
-            "description": "A fiery delight with a crispy chicken patty, spicy sauce, lettuce, and pickles."
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "name": "Margherita Pizza",
+        "price": 299.99,
+        "cooktime": 15,
+        "favorite": false,
+        "origins": ["Italian"],
+        "stars": 4.5,
+        "imageUrl": "pizza-1.avif",
+        "tags": ["Pizza", "Italian", "Classic"]
+    },
+    {
+        "id": 2,
+        "name": "Pepperoni Pizza",
+        "price": 349.99,
+        "cooktime": 18,
+        "favorite": true,
+        "origins": ["Italian", "American"],
+        "stars": 4.7,
+        "imageUrl": "pizza-2.jpg",
+        "tags": ["Pizza", "Italian", "Spicy"]
+    },
+    {
+        "id": 3,
+        "name": "Vegetarian Supreme Pizza",
+        "price": 329.99,
+        "cooktime": 20,
+        "favorite": false,
+        "origins": ["Italian"],
+        "stars": 4.3,
+        "imageUrl": "pizza-3.webp",
+        "tags": ["Pizza", "Italian", "Vegetarian"]
+    },
+    {
+        "id": 4,
+        "name": "Hawaiian Pizza",
+        "price": 359.99,
+        "cooktime": 17,
+        "favorite": false,
+        "origins": ["Hawaiian"],
+        "stars": 4.4,
+        "imageUrl": "pizza-4.jpg",
+        "tags": ["Pizza", "Hawaiian", "Fruity"]
+    },
+    {
+        "id": 5,
+        "name": "BBQ Chicken Pizza",
+        "price": 369.99,
+        "cooktime": 22,
+        "favorite": true,
+        "origins": ["American"],
+        "stars": 4.6,
+        "imageUrl": "pizza-5.avif",
+        "tags": ["Pizza", "American", "BBQ"]
+    },
+    {
+        "id": 6,
+        "name": "Supreme Meat Lover's Pizza",
+        "price": 399.99,
+        "cooktime": 25,
+        "favorite": true,
+        "origins": ["American"],
+        "stars": 4.8,
+        "imageUrl": "pizza-6.jpg",
+        "tags": ["Pizza", "American", "Meat"]
+    },
+    {
+        "id": 7,
+        "name": "Four Cheese Pizza",
+        "price": 329.99,
+        "cooktime": 18,
+        "favorite": false,
+        "origins": ["Italian"],
+        "stars": 4.4,
+        "imageUrl": "pizza-7.jpg",
+        "tags": ["Pizza", "Italian", "Cheese"]
+    },
+    {
+        "id": 8,
+        "name": "Vegan Delight Pizza",
+        "price": 349.99,
+        "cooktime": 20,
+        "favorite": false,
+        "origins": ["Vegan"],
+        "stars": 4.2,
+        "imageUrl": "pizza-8.JPG",
+        "tags": ["Pizza", "Vegan", "Plant-Based"]
+    },
+    {
+        "id": 9,
+        "name": "Barbecue Veggie Pizza",
+        "price": 359.99,
+        "cooktime": 19,
+        "favorite": false,
+        "origins": ["American"],
+        "stars": 4.3,
+        "imageUrl": "pizza-9.jpg",
+        "tags": ["Pizza", "American", "Vegetarian"]
+    },
+    {
+        "id": 10,
+        "name": "Pesto Chicken Pizza",
+        "price": 379.99,
+        "cooktime": 23,
+        "favorite": true,
+        "origins": ["Italian"],
+        "stars": 4.7,
+        "imageUrl": "pizza-10.jpg",
+        "tags": ["Pizza", "Italian", "Gourmet"]
+    },
+    {
+        "id": 11,
+        "name": "Double Bacon Cheeseburger",
+        "price": 189.99,
+        "cooktime": 12,
+        "favorite": true,
+        "origins": ["American"],
+        "stars": 4.6,
+        "imageUrl": "burger-1.webp",
+        "tags": ["Burger", "American", "Bacon"]
+    },
+    {
+        "id": 12,
+        "name": "Black Bean Burger",
+        "price": 139.99,
+        "cooktime": 15,
+        "favorite": false,
+        "origins": ["American"],
+        "stars": 4.2,
+        "imageUrl": "burger-2.jpg",
+        "tags": ["Burger", "American", "Vegetarian"]
+    },
+    {
+        "id": 13,
+        "name": "Crispy Fish Burger",
+        "price": 159.99,
+        "cooktime": 14,
+        "favorite": false,
+        "origins": ["Seafood"],
+        "stars": 4.3,
+        "imageUrl": "burger-3.jpg",
+        "tags": ["Burger", "Seafood", "Crispy"]
+    },
+    {
+        "id": 14,
+        "name": "BBQ Pulled Pork Burger",
+        "price": 169.99,
+        "cooktime": 18,
+        "favorite": true,
+        "origins": ["American"],
+        "stars": 4.5,
+        "imageUrl": "burger-4.jpg",
+        "tags": ["Burger", "American", "BBQ"]
+    },
+    {
+        "id": 15,
+        "name": "Mushroom Veggie Burger",
+        "price": 149.99,
+        "cooktime": 16,
+        "favorite": false,
+        "origins": ["American"],
+        "stars": 4.1,
+        "imageUrl": "burger-5.jpg",
+        "tags": ["Burger", "American", "Vegetarian"]
+    },
+    {
+        "id": 16,
+        "name": "Classic Cheeseburger",
+        "price": 149.99,
+        "cooktime": 13,
+        "favorite": false,
+        "origins": ["American"],
+        "stars": 4.4,
+        "imageUrl": "burger-6.webp",
+        "tags": ["Burger", "American", "Classic"]
+    },
+    {
+        "id": 17,
+        "name": "Veggie Burger",
+        "price": 139.99,
+        "cooktime": 15,
+        "favorite": false,
+        "origins": ["Vegan"],
+        "stars": 4.0,
+        "imageUrl": "burger-7.jpg",
+        "tags": ["Burger", "Vegan", "Plant-Based"]
+    },
+    {
+        "id": 18,
+        "name": "Bacon Deluxe Burger",
+        "price": 169.99,
+        "cooktime": 17,
+        "favorite": true,
+        "origins": ["American"],
+        "stars": 4.5,
+        "imageUrl": "burger-8.webp",
+        "tags": ["Burger", "American", "Bacon"]
+    },
+    {
+        "id": 19,
+        "name": "Mushroom Swiss Burger",
+        "price": 159.99,
+        "cooktime": 16,
+        "favorite": false,
+        "origins": ["American"],
+        "stars": 4.2,
+        "imageUrl": "burger-9.webp",
+        "tags": ["Burger", "American", "Gourmet"]
+    },
+    {
+        "id": 20,
+        "name": "Spicy Chick'n Burger",
+        "price": 149.99,
+        "cooktime": 14,
+        "favorite": false,
+        "origins": ["American"],
+        "stars": 4.3,
+        "imageUrl": "burger-10.webp",
+        "tags": ["Burger", "American", "Spicy"]
+    },
+    {
+        "id": 21,
+        "name": "Classic Vanilla",
+        "price": 374.25,
+        "cooktime": 5,
+        "favorite": false,
+        "origins": ["Classic"],
+        "stars": 4.4,
+        "imageUrl": "ice-1.jpg",
+        "tags": ["Ice Cream", "Classic", "Vanilla"]
+    },
+    {
+        "id": 22,
+        "name": "Chocolate Fudge Brownie",
+        "price": 411.75,
+        "cooktime": 8,
+        "favorite": true,
+        "origins": ["Chocolate", "Fudge"],
+        "stars": 4.6,
+        "imageUrl": "ice-2.webp",
+        "tags": ["Ice Cream", "Chocolate", "Fudge"]
+    },
+    {
+        "id": 23,
+        "name": "Strawberry Swirl",
+        "price": 359.25,
+        "cooktime": 6,
+        "favorite": false,
+        "origins": ["Strawberry"],
+        "stars": 4.2,
+        "imageUrl": "ice-3.jpg",
+        "tags": ["Ice Cream", "Strawberry", "Swirl"]
+    },
+    {
+        "id": 24,
+        "name": "Mint Chocolate Chip",
+        "price": 396.75,
+        "cooktime": 7,
+        "favorite": false,
+        "origins": ["Mint", "Chocolate"],
+        "stars": 4.3,
+        "imageUrl": "ice-4.jpg",
+        "tags": ["Ice Cream", "Mint", "Chocolate", "Chip"]
+    },
+    {
+        "id": 25,
+        "name": "Cookies and Cream",
+        "price": 374.25,
+        "cooktime": 5,
+        "favorite": false,
+        "origins": ["Cookies", "Cream"],
+        "stars": 4.4,
+        "imageUrl": "ice-5.jpg",
+        "tags": ["Ice Cream", "Cookies", "Cream"]
+    },
+    {
+        "id": 26,
+        "name": "Rocky Road",
+        "price": 449.25,
+        "cooktime": 9,
+        "favorite": true,
+        "origins": ["Chocolate", "Marshmallows", "Almonds"],
+        "stars": 4.7,
+        "imageUrl": "ice-6.jpg",
+        "tags": ["Ice Cream", "Chocolate", "Rocky Road"]
+    },
+    {
+        "id": 27,
+        "name": "Peanut Butter Cup",
+        "price": 411.75,
+        "cooktime": 8,
+        "favorite": true,
+        "origins": ["Peanut Butter", "Chocolate Cups"],
+        "stars": 4.6,
+        "imageUrl": "ice-7.jpg",
+        "tags": ["Ice Cream", "Peanut Butter", "Chocolate", "Cup"]
+    },
+    {
+        "id": 28,
+        "name": "Caramel Crunch",
+        "price": 396.75,
+        "cooktime": 7,
+        "favorite": false,
+        "origins": ["Toffee", "Caramel"],
+        "stars": 4.4,
+        "imageUrl": "ice-8.jpg",
+        "tags": ["Ice Cream", "Caramel", "Crunch"]
+    },
+    {
+        "id": 29,
+        "name": "Tropical Paradise",
+        "price": 486.75,
+        "cooktime": 10,
+        "favorite": true,
+        "origins": ["Exotic Fruits", "Coconut"],
+        "stars": 4.8,
+        "imageUrl": "ice-9.jpg",
+        "tags": ["Ice Cream", "Exotic", "Tropical"]
+    },
+    {
+        "id": 30,
+        "name": "Double Espresso",
+        "price": 434.25,
+        "cooktime": 7,
+        "favorite": true,
+        "origins": ["Coffee", "Espresso"],
+        "stars": 4.5,
+        "imageUrl": "ice-10.jpg",
+        "tags": ["Ice Cream", "Coffee", "Espresso"]
+    },
+    {
+        "id": 31,
+        "name": "Orange Juice",
+        "price": 79.99,
+        "cooktime": 2,
+        "favorite": false,
+        "origins": ["Orange"],
+        "stars": 4.2,
+        "imageUrl": "juice-1.webp",
+        "tags": ["Juice", "Orange", "Citrus"]
+    },
+    {
+        "id": 32,
+        "name": "Apple Juice",
+        "price": 74.99,
+        "cooktime": 3,
+        "favorite": false,
+        "origins": ["Apple"],
+        "stars": 4.1,
+        "imageUrl": "juice-2.jpg",
+        "tags": ["Juice", "Apple", "Fruit"]
+    },
+    {
+        "id": 33,
+        "name": "Grape Juice",
+        "price": 89.99,
+        "cooktime": 2,
+        "favorite": false,
+        "origins": ["Grape"],
+        "stars": 4.3,
+        "imageUrl": "juice-3.jpg",
+        "tags": ["Juice", "Grape", "Sweet"]
+    },
+    {
+        "id": 34,
+        "name": "Pineapple Juice",
+        "price": 84.99,
+        "cooktime": 3,
+        "favorite": false,
+        "origins": ["Pineapple"],
+        "stars": 4.4,
+        "imageUrl": "juice-4.webp",
+        "tags": ["Juice", "Pineapple", "Tropical"]
+    },
+    {
+        "id": 35,
+        "name": "Mango Juice",
+        "price": 94.99,
+        "cooktime": 2,
+        "favorite": false,
+        "origins": ["Mango"],
+        "stars": 4.2,
+        "imageUrl": "juice-5.avif",
+        "tags": ["Juice", "Mango", "Tropical"]
+    },
+    {
+        "id": 36,
+        "name": "Cranberry Juice",
+        "price": 99.99,
+        "cooktime": 2,
+        "favorite": false,
+        "origins": ["Cranberry"],
+        "stars": 4.5,
+        "imageUrl": "juice-6.jpg",
+        "tags": ["Juice", "Cranberry", "Tangy"]
+    },
+    {
+        "id": 37,
+        "name": "Ginger Lemonade",
+        "price": 89.99,
+        "cooktime": 2,
+        "favorite": false,
+        "origins": ["Lemon", "Ginger"],
+        "stars": 4.3,
+        "imageUrl": "juice-7.webp",
+        "tags": ["Juice", "Lemon", "Ginger"]
+    },
+    {
+        "id": 38,
+        "name": "Carrot Juice",
+        "price": 79.99,
+        "cooktime": 3,
+        "favorite": false,
+        "origins": ["Carrot"],
+        "stars": 4.0,
+        "imageUrl": "juice-8.jpg",
+        "tags": ["Juice", "Carrot", "Healthy"]
+    },
+    {
+        "id": 39,
+        "name": "Tomato Juice",
+        "price": 74.99,
+        "cooktime": 2,
+        "favorite": false,
+        "origins": ["Tomato"],
+        "stars": 4.1,
+        "imageUrl": "juice-9.jpg",
+        "tags": ["Juice", "Tomato", "Classic"]
+    },
+    {
+        "id": 40,
+        "name": "Blueberry Juice",
+        "price": 99.99,
+        "cooktime": 2,
+        "favorite": false,
+        "origins": ["Blueberry"],
+        "stars": 4.4,
+        "imageUrl": "juice-10.jpg",
+        "tags": ["Juice", "Blueberry", "Antioxidants"]
+    }
+]
+
+
+
+
+
+
+
