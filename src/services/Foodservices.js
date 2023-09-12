@@ -14,3 +14,4 @@ export const getAllByTags = async tag => {
     if(tag === 'All') return getAll();
     return sampleFoods.filter(item => item.tags?.includes(tag))
 }
+
