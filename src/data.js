@@ -7,7 +7,7 @@ export const sampleFoods = [
     favorite: true,
     origin: "Italian",
     stars: 4.5,
-    tags: ["pasta", "Italian", "creamy", "bacon"],
+    tags: ['FastFood', 'Pizza', 'Lunch'],
     imageUrl: "sample-1.jpg",
   },
   {
@@ -18,7 +18,7 @@ export const sampleFoods = [
     favorite: false,
     origin: "Japanese",
     stars: 4.7,
-    tags: ["sushi", "Japanese", "rice", "seafood"],
+    tags: ['SlowFood', 'Lunch'],
     imageUrl: "sample-2.jpg",
   },
   {
@@ -29,7 +29,7 @@ export const sampleFoods = [
     favorite: true,
     origin: "Indian",
     stars: 4.8,
-    tags: ["chicken", "Indian", "curry", "spicy"],
+    tags: ['FastFood', 'Hamburger'],
     imageUrl: "sample-3.jpg",
   },
   {
@@ -40,7 +40,7 @@ export const sampleFoods = [
     favorite: true,
     origin: "American",
     stars: 4.3,
-    tags: ["burger", "American", "fast food", "beef"],
+    tags: ['FastFood', 'Fry'],
     imageUrl: "sample-4.jpg",
   },
   {
@@ -51,7 +51,7 @@ export const sampleFoods = [
     favorite: false,
     origin: "Thai",
     stars: 4.6,
-    tags: ["noodles", "Thai", "spicy", "peanuts"],
+    tags: ['SlowFood', 'Soup'],
     imageUrl: "sample-5.JPG",
   },
   {
@@ -62,7 +62,7 @@ export const sampleFoods = [
     favorite: false,
     origin: "Italian",
     stars: 4.4,
-    tags: ["pizza", "Italian", "cheese", "tomato"],
+    tags: ['FastFood', 'Pizza', 'Lunch'],
     imageUrl: "sample-6.jpg",
   },
   {
@@ -73,7 +73,19 @@ export const sampleFoods = [
     favorite: true,
     origin: "Japanese",
     stars: 4.9,
-    tags: ["sushi", "Japanese", "raw fish", "deluxe"],
+    tags: ['FastFood', 'Pizza', 'Lunch'],
     imageUrl: "sample-7.jpg",
   },
 ];
+
+
+export const sampleTags = [
+  {name: 'All' ,count: 7},
+  {name: 'FastFood', count: 5},
+  {name: 'Pizza', count: 3},
+  {name: 'Lunch', count: 4},
+  {name: 'SlowFood', count: 2},
+  {name: 'Hamburger', count: 1},
+  {name: 'Fry', count: 1},
+  {name: 'Soup', count: 1}
+]

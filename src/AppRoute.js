@@ -7,6 +7,7 @@ export default function AppRoute() {
     <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/search/:searchTerm' element={<Homepage />} />
+        <Route path='/tag/:tag' element={<Homepage />} />
     </Routes>
   )
 }

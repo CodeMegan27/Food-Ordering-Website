@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.container a {
+    margin: 10px;
+    padding: 5px 8px;
+    background-color: lightgrey;
+    border-radius: 25px;
+    color: tomato;
+}
