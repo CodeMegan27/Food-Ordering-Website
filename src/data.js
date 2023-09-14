@@ -280,7 +280,7 @@ export const sampleFoods = [
         "price": 449.25,
         "cooktime": 9,
         "favorite": true,
-        "origins": ["Chocolate", "Marshmallows", "Almonds"],
+        "origins": ["Chocolate", "Almonds"],
         "stars": 4.7,
         "imageUrl": "ice-6.jpg",
         "tags": ["Ice Cream", "Chocolate", "Rocky Road"]
@@ -291,7 +291,7 @@ export const sampleFoods = [
         "price": 411.75,
         "cooktime": 8,
         "favorite": true,
-        "origins": ["Peanut Butter", "Chocolate Cups"],
+        "origins": ["Peanut", "Chocolate"],
         "stars": 4.6,
         "imageUrl": "ice-7.jpg",
         "tags": ["Ice Cream", "Peanut Butter", "Chocolate", "Cup"]

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./foodPage.module.css";
-import classes from './foodPage.module.css'
+import classes from "./foodPage.module.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { getById } from "../../services/Foodservices";
 import { useCart } from "../../hooks/useCart";
@@ -16,8 +16,8 @@ export default function FoodPage() {
   const navigate = useNavigate();
 
   const handleAddToCart = () => {
-    AddtoCart(food)
-    navigate('/cart');
+    AddtoCart(food);
+    navigate("/cart");
   };
 
   useEffect(() => {
@@ -28,19 +28,19 @@ export default function FoodPage() {
       {!food ? (
         <NotFound message="Food Not Found!" linkText="Back To Homepage" />
       ) : (
-        <div className={classes.container}>
+        <div className="flex justify-center  flex-wrap mt-11 w-full h-full pt-7">
           <img
-            className={classes.image}
+            className=" w-60 h-72 rounded-2xl object-cover mt-11 ml-8"
             src={`/foods/${food.imageUrl}`}
             alt={food.name}
           />
 
-          <div className={classes.details}>
-            <div className={classes.header}>
-              <span className={classes.name}>{food.name}</span>
+          <div className="w-80 flex flex-col ml-4 p-4 rounded-3xl border border-slate-600 border-solid">
+            <div className="flex justify-between align-text-bottom">
+              <span className="text-xl font-medium mt-4">{food.name}</span>
               <span
                 className={`${classes.favorite} ${
-                  food.favorite ? '' : classes.not
+                  food.favorite ? "" : classes.not
                 }`}
               >
                 ❤
@@ -50,32 +50,34 @@ export default function FoodPage() {
               <StarRating stars={food.stars} size={25} />
             </div>
 
-            <div className={classes.origins}>
-              {food.origins?.map(origin => (
-                <span key={origin}>{origin}</span>
+            <div className="flex flex-wrap mt-3">
+              {food.origins?.map((origin) => (
+                <span className="p-2 text-lg mt-2 ml-2 rounded-3xl bg-red-400" key={origin}>
+                  {origin}
+                </span>
               ))}
             </div>
 
             <div className={classes.tags}>
               {food.tags && (
                 <Tags
-                  tags={food.tags.map(tag => ({ name: tag }))}
+                  tags={food.tags.map((tag) => ({ name: tag }))}
                   forFoodPage={true}
                 />
               )}
             </div>
 
-            <div className={classes.cookTime}>
+            <div className="text-red-400">
               <span>
-                Time to cook about <strong>{food.cookTime}</strong> minutes
+                Time to cook about <strong className="underline underline-offset-4 text-red-700">{food.cooktime}</strong> minutes
               </span>
             </div>
 
-            <div className={classes.price}>
-              <Price price={food.price} />
+            <div className="text-base mb-1 text-green-600 ml-5 ">
+              <Price price={food.price}  />
             </div>
 
-            <button onClick={handleAddToCart}>Add To Cart</button>
+            <button className="bg-green-800 text-white px-3 py-3 rounded-3xl hover:bg-green-600" onClick={handleAddToCart}>Add To Cart</button>
           </div>
         </div>
       )}

@@ -11,7 +11,7 @@ export default function Thumnails({ foods }) {
         <li key={food.id} className="w-80 h-96 flex flex-col m-4 overflow-hidden border-2 border-slate-500 rounded-md text-white">
           <Link to={`/food/${food.id}`} className={classes.link}>
             <img
-              className="object-cover h-52 w-full"
+              className="object-cover h-52 w-full transition-all hover:scale-150 overflow-hidden"
               src={`/foods/${food.imageUrl}`}
               alt={food.name}
             />
@@ -30,13 +30,13 @@ export default function Thumnails({ foods }) {
                 <div className="mt-2.5 mb-2.5">
                   {
                     food.origins.map(origin => (
-                      <span className="rounded-lg bg-green-700 text-white px-0.5 py-2.5 ml-2.5 text-sm" key={origin}>{origin}</span>
+                      <span className="rounded-lg bg-green-700 text-white px-0.5 py-1.5 ml-0.5 text-xs" key={origin}>{origin}</span>
                     ))
                   }
                 </div>
-                <div className="mt-2.5 mb-2.5">
-                  <span>🕧</span>
-                  `{food.cooktime} minutes`
+                <div className="mt-1.5 mb-1.5 text-xs text-right">
+                  <span>🕧`{food.cooktime} minutes`</span>
+                  
                 </div>
               </div>
               <div className="absolute mt-1.5 bg-yellow-400 text-white p-1 rounded-md ml-2 font-semibold shadow-md">

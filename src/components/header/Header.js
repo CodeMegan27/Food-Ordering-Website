@@ -13,7 +13,7 @@ export default function Header() {
   const logout = () => { };
 
   return (
-    <header className="w-full p-5 bg-indigo-950 text-white text-lg header fixed z-10 top-0">
+    <header className="w-full h-14 bg-indigo-950 text-white text-lg header fixed z-10 top-0">
       <div
         className="
       flex 
@@ -34,8 +34,8 @@ export default function Header() {
         <nav className="w-80">
           <ul className="list-none flex m-0 w-full h-full justify-around">
             {user ? (
-              <li className="relative group transition-all">
-                <Link className="p-3 inline-block" to="/profile">
+              <li className="relative group transition-all h-full">
+                <Link className="block" to="/profile">
                   {user.name}
                 </Link>
                 <div className="absolute z-10 bg-sky-900 hidden group-hover:block transition-all rounded-lg">
@@ -60,14 +60,14 @@ export default function Header() {
             ) : (
               <Link to="/login">Log In</Link>
             )}
-            <li className="h-14 flex flex-col justify-center relative">
+            <li className="flex flex-col justify-center relative">
               <Link
                 className="hover:border-b-2 transition-all hover:border-red-500 w-16"
                 to="/cart"
               >
                 Cart
                 {cart.totalCount > 0 && (
-                  <span className="text-whtie bg-red-600 rounded-full w-6 inline-block absolute top-0 right-0">
+                  <span className="text-whtie text-center bg-red-600 rounded-full w-6 inline-block absolute top-0 right-0">
                     {cart.totalCount}
                   </span>
                 )}
