@@ -33,14 +33,14 @@
 
 .favorite {
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 10px;
     font-size: 45px;
     margin: 0;
 }
 
 .favorite.not {
-    color: grey;
+    color: rgb(82, 82, 82);
 }
 
 .stars {

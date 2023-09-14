@@ -6,16 +6,16 @@ import Price from "../Price/Price";
 
 export default function Thumnails({ foods }) {
   return (
-    <ul className={classes.list}>
+    <ul className="flex flex-wrap justify-center align-middle p-0 list-none">
       {foods.map((food) => (
-        <li key={food.id}>
+        <li key={food.id} className="w-80 h-96 flex flex-col m-4 overflow-hidden border-2 border-slate-500 rounded-md text-white">
           <Link to={`/food/${food.id}`} className={classes.link}>
             <img
-              className={classes.Image}
+              className="object-cover h-52 w-full"
               src={`/foods/${food.imageUrl}`}
               alt={food.name}
             />
-            <div className={classes.content}>
+            <div className="relative mt-4 px-3 py-3 text-sm">
               <div className={classes.name}>{food.name}</div>
               <span
                 className={`${classes.favorite} ${food.favorite ? " " : classes.not
@@ -23,23 +23,23 @@ export default function Thumnails({ foods }) {
               >
                 ❤
               </span>
-              <div className={classes.stars}>
+              <div className="mx-2.5 my-2.5">
                 <StarRating stars={food.stars} />
               </div>
-              <div className={classes.product_item_footer}>
-                <div className={classes.origins}>
+              <div className="flex justify-between align-baseline">
+                <div className="mt-2.5 mb-2.5">
                   {
                     food.origins.map(origin => (
-                      <span key={origin}>{origin}</span>
+                      <span className="rounded-lg bg-green-700 text-white px-0.5 py-2.5 ml-2.5 text-sm" key={origin}>{origin}</span>
                     ))
                   }
                 </div>
-                <div className={classes.cook_time}>
+                <div className="mt-2.5 mb-2.5">
                   <span>🕧</span>
                   `{food.cooktime} minutes`
                 </div>
               </div>
-              <div className={classes.price}>
+              <div className="absolute mt-1.5 bg-yellow-400 text-white p-1 rounded-md ml-2 font-semibold shadow-md">
                 <Price price={food.price} />
               </div>
             </div>

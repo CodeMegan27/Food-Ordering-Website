@@ -415,7 +415,7 @@ export const sampleFoods = [
         "origins": ["Carrot"],
         "stars": 4.0,
         "imageUrl": "juice-8.jpg",
-        "tags": ["Juice", "Carrot", "Healthy"]
+        "tags": ["Juice", "Carrot"]
     },
     {
         "id": '39',
@@ -426,7 +426,7 @@ export const sampleFoods = [
         "origins": ["Tomato"],
         "stars": 4.1,
         "imageUrl": "juice-9.jpg",
-        "tags": ["Juice", "Tomato", "Classic"]
+        "tags": ["Juice", "Tomato"]
     },
     {
         "id": '40',

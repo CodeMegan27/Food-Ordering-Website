@@ -8,33 +8,51 @@ export default function Header() {
     name: "Megan",
   };
 
-  const {cart} = useCart();
+  const { cart } = useCart();
 
-  const logout = () => {};
+  const logout = () => { };
 
   return (
-    <header className="w-full p-5 bg-indigo-950 text-white text-lg header">
-      <div className="
+    <header className="w-full p-5 bg-indigo-950 text-white text-lg header fixed z-10 top-0">
+      <div
+        className="
       flex 
       w-full 
       h-full 
       justify-between 
-      align-middle
+      align-baseline
       p-3
-      container
-      ">
-        <Link to="/" className="classes.logo">
+      gap-3
+      "
+      >
+        <Link
+          to="/"
+          className="flex flex-col justify-center hover:border-b-2 hover:border-red-500 transition-all"
+        >
           Megan's Food
         </Link>
-        <nav>
-          <ul className="list-none flex m-0 justify-center align-middle">
+        <nav className="w-80">
+          <ul className="list-none flex m-0 w-full h-full justify-around">
             {user ? (
-              <li className="relative">
-                <Link className="p-3 inline-block" to="/profile">{user.name}</Link>
-                <div className="absolute z-10 bg-sky-900">
-                  <Link className="p-3 inline-block" to="/profile">Profile</Link>
-                  <Link className="p-3 inline-block" to="/orders">Orders</Link>
-                  <a className="p-3 inline-block" href={"d"} onClick={logout}>
+              <li className="relative group transition-all">
+                <Link className="p-3 inline-block" to="/profile">
+                  {user.name}
+                </Link>
+                <div className="absolute z-10 bg-sky-900 hidden group-hover:block transition-all rounded-lg">
+                  <Link
+                    className="p-3 block hover:bg-slate-500 rounded-lg"
+                    to="/profile"
+                  >
+                    Profile
+                  </Link>
+                  <Link className="p-3 block hover:bg-slate-500 " to="/orders">
+                    Orders
+                  </Link>
+                  <a
+                    className="p-3 block hover:bg-slate-500 rounded-lg"
+                    href={"d"}
+                    onClick={logout}
+                  >
                     Logout
                   </a>
                 </div>
@@ -42,11 +60,16 @@ export default function Header() {
             ) : (
               <Link to="/login">Log In</Link>
             )}
-            <li className="leading-normal">
-              <Link to="/cart">
+            <li className="h-14 flex flex-col justify-center relative">
+              <Link
+                className="hover:border-b-2 transition-all hover:border-red-500 w-16"
+                to="/cart"
+              >
                 Cart
                 {cart.totalCount > 0 && (
-                  <span className="classes.cart_count">{cart.totalCount}</span>
+                  <span className="text-whtie bg-red-600 rounded-full w-6 inline-block absolute top-0 right-0">
+                    {cart.totalCount}
+                  </span>
                 )}
               </Link>
             </li>
