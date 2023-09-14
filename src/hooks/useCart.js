@@ -1,18 +1,19 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
-import { sampleFoods } from '../data';
 
 
 const CartContext = createContext(null);
+const CART_KEY = 'cart';
+const EMPTY_CART = {
+  items: [],
+  totalPrice: 0,
+  totalCount: 0,
+};
 
 export default function CartProvider({children}) {
-
-  const [cartItems, setCartItems] = useState(
-    sampleFoods.slice(1, 4).map((food) => ({
-      food, quantity: 1, price: food.price
-    }))
-  );
-  const [totalPrice, setTotalPrice] = useState(40);
-  const [totalCount, setTotalCount] = useState(3);
+  const initCart = getCartFromLocalStorage();
+  const [cartItems, setCartItems] = useState(initCart.items);
+  const [totalPrice, setTotalPrice] = useState(initCart.price);
+  const [totalCount, setTotalCount] = useState(initCart.count);
 
 
   useEffect(()=>{
@@ -22,8 +23,22 @@ export default function CartProvider({children}) {
     setTotalCount(totalCount);
 
 
+    localStorage.setItem(
+      CART_KEY,
+      JSON.stringify({
+        items: cartItems,
+        totalPrice,
+        totalCount,
+      })
+    );
+
   }, [cartItems]);
   
+  function getCartFromLocalStorage() {
+    const storedCart = localStorage.getItem(CART_KEY);
+    return storedCart ? JSON.parse(storedCart) : EMPTY_CART;
+  }
+
   const sum = items => {
     return items.reduce((prevValue, curValue) => prevValue + curValue, 0);
   }
@@ -57,11 +72,14 @@ export default function CartProvider({children}) {
 
     }
   }
+
+
   
   return <CartContext.Provider value={{
     cart: {items: cartItems, totalPrice, totalCount},
     removeFromCart,
     changeQuantity,
+    AddtoCart,
   }} >
     {children} </CartContext.Provider>
 }

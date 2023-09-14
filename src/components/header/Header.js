@@ -13,7 +13,7 @@ export default function Header() {
   const logout = () => {};
 
   return (
-    <header className="w-full p-5 bg-indigo-950 text-white text-lg">
+    <header className="w-full p-5 bg-indigo-950 text-white text-lg header">
       <div className="
       flex 
       w-full 
@@ -21,7 +21,7 @@ export default function Header() {
       justify-between 
       align-middle
       p-3
-      
+      container
       ">
         <Link to="/" className="classes.logo">
           Megan's Food

@@ -5,7 +5,7 @@ export default function Price({price, locale, currency}) {
         new Intl.NumberFormat(locale, {
             style: 'currency',
             currency,
-        }).format(price * 74.50)
+        }).format(price)
 
   return (
     <span>{formatPrice()}</span>
