@@ -28,11 +28,15 @@ export default function Thumnails({ foods }) {
               </div>
               <div className={classes.product_item_footer}>
                 <div className={classes.origins}>
-                  <span>{food.origin}</span>
+                  {
+                    food.origins.map(origin => (
+                      <span key={origin}>{origin}</span>
+                    ))
+                  }
                 </div>
                 <div className={classes.cook_time}>
                   <span>🕧</span>
-                  {food.cookTime}
+                  `{food.cooktime} minutes`
                 </div>
               </div>
               <div className={classes.price}>
@@ -47,3 +51,4 @@ export default function Thumnails({ foods }) {
 }
 
 // ❤️
+//<span>{food.origins}</span>
