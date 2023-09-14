@@ -4,7 +4,7 @@ import Price from '../../components/Price/Price';
 import Title from '../../components/Title/Title';
 import { useCart } from '../../hooks/useCart';
 import classes from './cartPage.module.css';
-import NotFound from '../../components/NotFound/NotFound';
+import NotFound from '../../components/Not-Fount/NotFound';
 export default function CartPage() {
   const { cart, removeFromCart, changeQuantity } = useCart();
   return (

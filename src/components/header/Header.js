@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.module.css";
 import { Link } from "react-router-dom";
-import { useCart } from "../../Hooks/useCart";
+import { useCart } from "../../hooks/useCart";
 
 export default function Header() {
   const user = {
