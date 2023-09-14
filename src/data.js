@@ -442,12 +442,19 @@ export const sampleFoods = [
 ]
 
 export const sampleTags = [
-    { name: 'All', count: 6 },
-    { name: 'FastFood', count: 4 },
-    { name: 'Pizza', count: 2 },
-    { name: 'Lunch', count: 3 },
-    { name: 'SlowFood', count: 2 },
-    { name: 'Hamburger', count: 1 },
-    { name: 'Fry', count: 1 },
-    { name: 'Soup', count: 1 },
+    {"name": "All", "count": 68},
+    {"name": "Pizza", "count": 10},
+    {"name": "American", "count": 10},
+    {"name": "Italian", "count": 7},
+    {"name": "Burger", "count": 10},
+    {"name": "Vegetarian", "count": 4},
+    {"name": "Classic", "count": 3},
+    {"name": "BBQ", "count": 3},
+    {"name": "Meat", "count": 3},
+    {"name": "Vegan", "count": 3},
+    {"name": "Bacon", "count": 3},
+    {"name": "Gourmet", "count": 2},
+    {"name": "Spicy", "count": 2},
+    {"name": "Chocolate", "count": 2},
+    {"name": "Juice", "count": 10}
 ];
