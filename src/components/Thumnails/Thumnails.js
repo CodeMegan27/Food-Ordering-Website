@@ -1,4 +1,5 @@
 import React from "react";
+import './Thumbnails.module.css';
 import classes from "./Thumbnails.module.css";
 import { Link } from "react-router-dom";
 import StarRating from "../StarRatings/StarRating";
