@@ -30,7 +30,7 @@ export default function FoodPage() {
       ) : (
         <div className="flex justify-center  flex-wrap mt-11 w-full h-full pt-7">
           <img
-            className=" w-60 h-72 rounded-2xl object-cover mt-11 ml-8"
+            className=" w-80 h-72 rounded-2xl object-cover mt-11 ml-8"
             src={`/foods/${food.imageUrl}`}
             alt={food.name}
           />

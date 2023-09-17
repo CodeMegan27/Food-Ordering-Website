@@ -7,7 +7,7 @@ export const sampleFoods = [
         "favorite": false,
         "origins": ["Italian"],
         "stars": 4.5,
-        "imageUrl": "pizza-1.avif",
+        "imageUrl": "pizza-1.jpg",
         "tags": ["Pizza", "Italian", "Classic"]
     },
     {
@@ -51,7 +51,7 @@ export const sampleFoods = [
         "favorite": true,
         "origins": ["American"],
         "stars": 4.6,
-        "imageUrl": "pizza-5.avif",
+        "imageUrl": "pizza-5.jpg",
         "tags": ["Pizza", "American", "BBQ"]
     },
     {
@@ -381,7 +381,7 @@ export const sampleFoods = [
         "favorite": false,
         "origins": ["Mango"],
         "stars": 4.2,
-        "imageUrl": "juice-5.avif",
+        "imageUrl": "juice-5.jpg",
         "tags": ["Juice", "Mango", "Tropical"]
     },
     {
@@ -442,19 +442,19 @@ export const sampleFoods = [
 ]
 
 export const sampleTags = [
-    {"name": "All", "count": 68},
+    {"name": "All", "count": 40},
     {"name": "Pizza", "count": 10},
-    {"name": "American", "count": 10},
-    {"name": "Italian", "count": 7},
+    {"name": "American", "count": 11},
+    {"name": "Italian", "count": 5},
     {"name": "Burger", "count": 10},
     {"name": "Vegetarian", "count": 4},
     {"name": "Classic", "count": 3},
-    {"name": "BBQ", "count": 3},
-    {"name": "Meat", "count": 3},
-    {"name": "Vegan", "count": 3},
-    {"name": "Bacon", "count": 3},
+    {"name": "BBQ", "count": 2},
+    {"name": "Meat", "count": 1},
+    {"name": "Vegan", "count": 2},
+    {"name": "Bacon", "count": 2},
     {"name": "Gourmet", "count": 2},
     {"name": "Spicy", "count": 2},
-    {"name": "Chocolate", "count": 2},
+    {"name": "Chocolate", "count": 3},
     {"name": "Juice", "count": 10}
 ];

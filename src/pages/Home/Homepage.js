@@ -47,7 +47,7 @@ export default function Homepage() {
 
   return (
     <>
-      <div className="mt-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+      <div className="mt-12 bg-slate-800">
         <Search />
         <Tags tags={tags} />
         {foods.length === 0 && <NotFound linkText="Reset Search" />}
