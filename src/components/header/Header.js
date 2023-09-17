@@ -13,7 +13,7 @@ export default function Header() {
   const logout = () => { };
 
   return (
-    <header className="w-full h-14 bg-orange-400 text-white text-lg header fixed z-10 top-0">
+    <header className="w-full h-14 bg-green-700 text-white text-lg header fixed z-10 top-0">
       <div
         className="
       flex 

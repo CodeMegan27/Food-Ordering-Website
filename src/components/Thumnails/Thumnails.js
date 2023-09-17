@@ -4,7 +4,7 @@ import classes from "./Thumbnails.module.css";
 import { Link } from "react-router-dom";
 import StarRating from "../StarRatings/StarRating";
 import Price from "../Price/Price";
-import "../../index.css"
+import "../../index.css";
 
 export default function Thumnails({ foods }) {
   return (
@@ -15,12 +15,14 @@ export default function Thumnails({ foods }) {
           className="w-80 card flex flex-col m-4 overflow-hidden border-2 border-slate-500 rounded-md text-white"
         >
           <Link to={`/food/${food.id}`} className={classes.link}>
-            <img
-              className="image object-cover h-64 w-full  overflow-hidden"
-              src={`/foods/${food.imageUrl}`}
-              alt={food.name}
-            />
-            <div className="relative mt-12 px-3 py-3 text-sm">
+            <div className="w-full h-80 bg-slate-200 overflow-hidden">
+              <img
+                className={classes.image}
+                src={`/foods/${food.imageUrl}`}
+                alt={food.name}
+              />
+            </div>
+            <div className="relative mt-3 px-3 py-3 text-sm">
               <div className={classes.name}>{food.name}</div>
               <span
                 className={`${classes.favorite} ${

@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './Tags.module.css'
+import './Tags.module.css'
 import { Link } from 'react-router-dom'
 
 export default function Tags({tags, forFoodPage}) {
@@ -11,7 +11,7 @@ export default function Tags({tags, forFoodPage}) {
     >
         {
             tags.map((tag) => (
-                <Link className='bg-slate-400 text-slate-600 m-3 p-3 rounded-xl text-xs' key={tag.name} to={`/tag/${tag.name}`}>
+                <Link className='bg-slate-400 text-slate-600 m-3 p-3 hover:bg-slate-700 hover:text-white rounded-xl text-xs' key={tag.name} to={`/tag/${tag.name}`}>
                     {tag.name}
                     {!forFoodPage && `(${tag.count})`}
                 </Link>
